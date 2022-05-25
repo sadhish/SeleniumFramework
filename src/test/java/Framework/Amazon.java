@@ -67,7 +67,7 @@ public class Amazon extends BrowserFactory {
                 System.out.println(cartCount);
                 driver.findElement(By.id("nav-cart")).click();
                String qtyCount= driver.findElement(By.id("a-autoid-0-announce")).getText();
-               System.out.println(qtyCount);
+
                Thread.sleep(2000);
              /*  int expectedQtyCount=Integer.parseInt(qtyCount.substring(qtyCount.lastIndexOf(":")+1).trim());
                Assert.assertEquals(cartCount,expectedQtyCount);*/
