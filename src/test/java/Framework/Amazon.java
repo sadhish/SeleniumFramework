@@ -71,7 +71,6 @@ public class Amazon extends BrowserFactory {
              /*  int expectedQtyCount=Integer.parseInt(qtyCount.substring(qtyCount.lastIndexOf(":")+1).trim());
                Assert.assertEquals(cartCount,expectedQtyCount);*/
                driver.findElement(By.xpath("//input[@value='Delete' and @aria-label='Delete Apple iPhone 13 (128GB) - Midnight']")).click();
-               Thread.sleep(5000);
                String expectedText=driver.findElement(By.xpath("//*[@id=\"sc-active-cart\"]/div/div[1]/div/h1")).getText().trim();
                Assert.assertEquals("Your Amazon Cart is empty.",expectedText);
                 extentReports.createTest("MyFirstTest")
